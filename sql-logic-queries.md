@@ -30,4 +30,9 @@ SELECT * FROM Dual;
 
 ********************************Nth max Salary****************************
 
-select * from (SELECT emp_name,salary over (partition by salary) ct from employee) where ct=2;
+select * from (SELECT firstname,lastname,salary,dense_rank() over (order by salary desc) ct from employee) where ct=2;
+
+********************************delete duplicate rows*****************************
+
+delete from temp_employee  where rowid not in (
+select min(rowid) from temp_employee b group by firstname,lastname);
