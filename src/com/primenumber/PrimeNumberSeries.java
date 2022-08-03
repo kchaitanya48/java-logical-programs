@@ -1,5 +1,6 @@
 package com.primenumber;
 
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class PrimeNumberSeries {
@@ -10,9 +11,9 @@ public class PrimeNumberSeries {
 	}
 	
 	public static void main(String[] args) {
-		
-		//isPrime(11);
-		IntStream.iterate(0,t->t+1).limit(12).filter(PrimeNumberSeries::isPrime).peek(System.out::println).count();
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		IntStream.iterate(0,t->t+1).limit(n).filter(PrimeNumberSeries::isPrime).peek(System.out::println).count();
 		
 	}
 
