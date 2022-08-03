@@ -25,7 +25,6 @@ public class FindDuplicate {
 		System.out.println("max repeated beforeValue" + value.charAt(value.lastIndexOf(entry.getKey()) - 1));
 	}
 
-	
 	static void findCountOfDuplicateFromIntegerArrayEx1(List<Integer> a) {
 
 		a.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet()
@@ -39,15 +38,15 @@ public class FindDuplicate {
 				.forEach(e -> System.out.println(e.getKey() + " --" + e.getValue()));
 
 	}
-	
+
 	static void removeDuplicatesIntegerUsingStream(int[] a) {
 		Arrays.stream(a).boxed().collect(Collectors.toSet()).forEach(System.out::println);
 	}
+
 	static void findDuplicatesIntegerUsingStream(int[] a) {
-		Set<Integer> ss=new HashSet<>();
-		Arrays.stream(a).boxed().filter(n->!ss.add(n)).distinct().forEach(System.out::println);
-		
-		
+		Set<Integer> ss = new HashSet<>();
+		Arrays.stream(a).boxed().filter(n -> !ss.add(n)).distinct().forEach(System.out::println);
+
 	}
 
 	public static void main(String[] args) {
