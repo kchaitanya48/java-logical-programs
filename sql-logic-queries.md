@@ -32,7 +32,20 @@ SELECT * FROM Dual;
 
 select * from (SELECT firstname,lastname,salary,dense_rank() over (order by salary desc) ct from employee) where ct=2;
 
+********************************FIND DUPLICATE RECORDS ***************
+
+select * from (select e.empid,count(*) over (partition by firstname,lastname)ct  from temp_employee e) where ct>1;
+
 ********************************delete duplicate rows*****************************
 
 delete from temp_employee  where rowid not in (
 select min(rowid) from temp_employee b group by firstname,lastname);
+
+
+****************************** TOP 3 SALARY DETAILS******************************
+
+SELECT DISTINCT SALARY FROM EMPLOYEE a
+WHERE 3>=(SELECT COUNT(DISTINCT SALARY) FROM EMPLOYEE b
+WHERE b.SALARY>=a.SALARY) ORDER BY a.SALARY DESC;
+
+
