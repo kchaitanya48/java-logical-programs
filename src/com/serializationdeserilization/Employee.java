@@ -1,4 +1,4 @@
-package com.comparable;
+package com.serializationdeserilization;
 
 public class Employee implements Comparable<Employee> {
 
@@ -6,7 +6,7 @@ public class Employee implements Comparable<Employee> {
 	private String firstName;
 	private String lastName;
 	private int age;
-	private Double salary;
+	private double salary;
 	private String city;
 	private String state;
 	
@@ -30,7 +30,7 @@ public class Employee implements Comparable<Employee> {
 		private String firstName;
 		private String lastName;
 		private int age;
-		private Double salary;
+		private double salary;
 		private String city;
 		private String state;
 
@@ -54,7 +54,7 @@ public class Employee implements Comparable<Employee> {
 			return this;
 		}
 
-		public EmployeeBuilder setSalary(final Double salary) {
+		public EmployeeBuilder setSalary(final double salary) {
 			this.salary = salary;
 			return this;
 		}
@@ -123,7 +123,7 @@ public class Employee implements Comparable<Employee> {
 
 
 
-	public Double getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 

@@ -1,4 +1,4 @@
-package com.partitionby;
+package com.java8.streams.partitionby;
 
 import java.util.List;
 import java.util.Map;
