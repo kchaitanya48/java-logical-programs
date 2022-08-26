@@ -12,3 +12,21 @@ How to prevent singleton
 https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/
 
 
+
+
+Java8 Features
+-----------------
+
+https://javatechonline.com/java-8-features/?fbclid=IwAR3lWv_afzoHix9-kBdM4-boZg7pdUgFGzQRLvJDvRPzd0-MwXaI7DpeE0M
+
+
+
+KAFKA
+------
+
+
+https://www.confluent.io/blog/apache-kafka-spring-boot-application/
+
+https://reflectoring.io/spring-boot-kafka/
+
+
