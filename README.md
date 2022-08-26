@@ -34,3 +34,13 @@ https://www.confluent.io/blog/spring-kafka-can-your-kafka-consumers-handle-a-poi
 
 https://stackoverflow.com/questions/69997305/spring-kafka-consumer-kafkalistenererrorhandler-vs-errorhandler-what-is-the-dif
 
+
+CALLABLE
+--------------
+
+https://www.callicoder.com/java-callable-and-future-tutorial/
+
+
+
+https://www.javatpoint.com/completablefuture-in-java
+
