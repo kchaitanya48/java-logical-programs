@@ -29,4 +29,6 @@ https://www.confluent.io/blog/apache-kafka-spring-boot-application/
 
 https://reflectoring.io/spring-boot-kafka/
 
+https://www.confluent.io/blog/spring-kafka-can-your-kafka-consumers-handle-a-poison-pill/
+
 
